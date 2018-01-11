@@ -1,0 +1,33 @@
+{
+    "secret": "ngEurope rocks!",
+    "audience": "nodejs-jwt-auth",
+    "issuer": "https://gonto.com",
+    "PREFIX": "/db/*",
+    "TARGET": "http://localhost:5984/",
+    "BURL": "http://localhost:8545",
+    "WEB3PREFIX": "/web3/*",
+    "WSBURL": "ws://localhost:8546",
+    "PRIVILEGE_CONTROLLER_SSD_OPERATIONS": 1100, 
+
+    "couch" : {
+        "db" : "http://127.0.0.1:5984/ssd",
+        "include_docs": true,
+        "since": "now"
+    },
+
+    "mySQL" : {
+        "host" : "127.0.0.1",
+        "port" : "3306",
+        "user" : "root",
+        "password" : "",
+        "database" : "ssd"
+    },
+
+    "queries" : {
+        "get_seq" : "SELECT seq FROM last_seq",
+        "last_seq" : "UPDATE last_seq SET ?",
+        "insert" : "INSERT INTO trades SET ? ON DUPLICATE KEY UPDATE seq=VALUES(seq), doc=VALUES(doc)",
+        "update" : "UPDATE trades SET ? WHERE doc_id = ?",
+        "delete" : "DELETE FROM trades WHERE doc_id = ?"
+    }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "couchdbreverseproxy",
+  "version": "0.1.0",
+  "description": "A nodejs reverse proxy for couchdb with additional services",
+  "main": "couchdbreverseproxy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dapp-dev/ssd-prototype/tree/master/couchdb-docker.git"
+  },
+  "keywords": [
+    "jwt",
+    "auth0"
+  ],
+  "author": "Kabir Khaleque",
+  "license": "PRIVATE",
+  "bugs": {
+    "url": "https://github.com/dapp-dev/ssd-prototype/tree/master/couchdb-docker"
+  },
+  "homepage": "https://github.com/dapp-dev/ssd-prototype/tree/master/couchdb-docker",
+  "dependencies": {
+    "atob": "^2.0.3",
+    "axios": "^0.16.2",
+    "body-parser": "^1.18.1",
+    "btoa": "^1.1.2",
+    "compression": "^1.7.1",
+    "cors": "^2.4.1",
+    "death": "^1.1.0",
+    "dotenv": "^0.4.0",
+    "errorhandler": "^1.1.1",
+    "ethereumjs-util": "^5.1.2",
+    "express": "^4.16.2",
+    "express-jwt": "^0.3.1",
+    "follow": "^1.0.0",
+    "jsonwebtoken": "^5.0.1",
+    "lodash": "^2.4.1",
+    "minimist": "^1.2.0",
+    "morgan": "^1.9.0",
+    "mysql": "^2.15.0",
+    "nano": "^6.4.2",
+    "web3": "^1.0.0-beta.18",
+    "web3-core-requestmanager": "^1.0.0-beta.23",
+    "web3-requestmanager": "^1.0.0-beta.14"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1"
+  }
+}
